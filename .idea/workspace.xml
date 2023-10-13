@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127ad005-1fe9-4d82-924e-d356d0aa0183" name="Changes" comment="Section 24.412(Debugging and Unit Testing: Asserts in Junit): introduction to asserts, how to implement testMethods in a testClass, best practices, and test features">
+    <list default="true" id="127ad005-1fe9-4d82-924e-d356d0aa0183" name="Changes" comment="Section 24.413(Debugging and Unit Testing: More Asserts and Exception Handling): introduced to more assert.methods(), use cases, introduced headers Before/All, Before/Each, After/All, After/Each; assertThrows for exceptions [note: Tim's video is in JUnit4, and code here is JUnit5. some headers and handling have changed]">
+      <change afterPath="$PROJECT_DIR$/src/BankAccountTestParameterized.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BankAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -58,19 +58,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankAccountTest.withdraw_notBranch">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Banking_Section24DebuggingAndUnitTesting" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.BankAccountTestParameterized">
     <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit">
       <module name="Banking_Section24DebuggingAndUnitTesting" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankAccountTest" />
       <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankAccountTestParameterized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Banking_Section24DebuggingAndUnitTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankAccountTestParameterized" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,11 +88,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankAccountTest.getBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankAccountTest.getBalance_withdraw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Banking_Section24DebuggingAndUnitTesting" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankAccountTest" />
-      <option name="METHOD_NAME" value="getBalance" />
+      <option name="METHOD_NAME" value="getBalance_withdraw" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,20 +119,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.BankAccountTest" />
+      <item itemvalue="JUnit.BankAccountTest.getBalance_withdraw" />
       <item itemvalue="JUnit.BankAccountTest.withdraw" />
       <item itemvalue="JUnit.BankAccountTest.withdraw_notBranch" />
+      <item itemvalue="JUnit.BankAccountTestParameterized" />
       <item itemvalue="JUnit.BankAccountTest.deposit" />
-      <item itemvalue="JUnit.BankAccountTest.getBalance" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BankAccountTestParameterized" />
+        <item itemvalue="JUnit.BankAccountTest.getBalance_withdraw" />
         <item itemvalue="JUnit.BankAccountTest.withdraw_notBranch" />
         <item itemvalue="JUnit.BankAccountTest.withdraw" />
         <item itemvalue="JUnit.BankAccountTest.deposit" />
-        <item itemvalue="JUnit.BankAccountTest.getBalance" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -157,13 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1697160035375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Section 24.413(Debugging and Unit Testing: More Asserts and Exception Handling): introduced to more assert.methods(), use cases, introduced headers Before/All, Before/Each, After/All, After/Each; assertThrows for exceptions [note: Tim's video is in JUnit4, and code here is JUnit5. some headers and handling have changed]">
+      <created>1697172757703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697172757703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Section 24.411(Debugging and Unit Testing: Introduction to Unit Testing with JUnit): introduction to JUnit, how to add a Run configuration for unit tests, filling in JUnit stubs with placeholders," />
     <MESSAGE value="Section 24.412(Debugging and Unit Testing: Asserts in Junit): introduction to asserts, how to implement testMethods in a testClass, best practices, and test features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Section 24.412(Debugging and Unit Testing: Asserts in Junit): introduction to asserts, how to implement testMethods in a testClass, best practices, and test features" />
+    <MESSAGE value="Section 24.413(Debugging and Unit Testing: More Asserts and Exception Handling): introduced to more assert.methods(), use cases, introduced headers Before/All, Before/Each, After/All, After/Each; assertThrows for exceptions [note: Tim's video is in JUnit4, and code here is JUnit5. some headers and handling have changed]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Section 24.413(Debugging and Unit Testing: More Asserts and Exception Handling): introduced to more assert.methods(), use cases, introduced headers Before/All, Before/Each, After/All, After/Each; assertThrows for exceptions [note: Tim's video is in JUnit4, and code here is JUnit5. some headers and handling have changed]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

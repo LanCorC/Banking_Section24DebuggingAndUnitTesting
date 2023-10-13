@@ -41,7 +41,6 @@ class BankAccountTest {
     void getBalance_deposit() {
         account.deposit(200.00, true);
         assertEquals(1200.00, account.getBalance(), 0);
-
     }
 
     @Test
